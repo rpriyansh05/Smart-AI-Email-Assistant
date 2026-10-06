@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #eef2f3 0%, #d9e7ff 100%);
+  min-height: 100vh;
+  font-family: "Poppins", "Roboto", sans-serif;
+}
+
+/* Smooth animations */
+* {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #1976d2;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1259a7;
+}
+
+/* Hover effects for paper and buttons */
+.MuiPaper-root {
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+.MuiPaper-root:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+.MuiButton-root {
+  transition: all 0.25s ease;
+}
+.MuiButton-root:hover {
+  transform: scale(1.04);
+}
+
